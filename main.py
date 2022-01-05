@@ -34,7 +34,7 @@ penultimate_closing_price = data_list[1]["4. close"]
 # closing price diff
 difference = abs(float(ultimate_closing_price) -  float(penultimate_closing_price))
 up_down = None
-if difference > 0:
+if float(ultimate_closing_price) -  float(penultimate_closing_price) > 0:
     up_down = "🔺"
 else:
     up_down = "🔻"
